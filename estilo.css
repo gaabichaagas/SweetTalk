@@ -1,0 +1,390 @@
+body{
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+	height: 13%;
+  background-color:#EB007C;
+  color:white;
+  text-align:center;
+  padding:5px;	
+  background: url(img/fundo.jpg);
+}
+
+header h1{
+  font-family: Playwrite Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 300%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/*INICIO NAVEGAÇÃO*/
+
+nav{
+  width: 20%;
+  height: 100%;
+  background-color: #FA9FC8;
+  border-right: 1.5px solid white;
+  float: left;
+  position: relative;
+  position: fixed;
+  left: 0%;
+}
+
+div.opcoes, div.menu{
+  align-items: center;
+  cursor: pointer;
+  padding: 7%;
+  font-family: Pixelify Sans;
+  font-size: 100%;
+  padding-left: 5%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+
+a div.ativa {
+  text-decoration: none;
+  background-color: white;
+  color: #f496c0;
+}
+
+div.opcoes h2, div.menu h2{
+  margin-left: 10px;
+  display: inline;
+  min-width: fit-content;
+}
+
+a div.opcoes{
+  display: block;
+  border-bottom: 1px solid white;
+  border-left: 5px solid transparent;
+  color: black;
+}
+
+a div.opcoes:hover, a div.opcoes.ativa{
+  background-color: white;
+  color: #f496c0;
+  transition: color 0.2s ease-out;
+  border-left: 5px solid #FA9FC8;
+}
+
+div.menu{
+  margin-left: 0.5%;
+}
+
+
+img.icons{
+  height: 20px;
+  border-radius: 10px;
+}
+
+div.opcoes a{
+  margin-left: 10px;
+  display: inline;
+  min-width: fit-content;
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/*FIM Navegação*/
+
+
+/*Postar*/
+
+section {
+  width: 58%;
+  padding:5px;
+  float: left;
+  margin-right: 2%;
+  flex: 0.5;
+  margin-left: 20%;
+}
+
+section div.postar img{
+  border-radius: 100px;
+  height: 50px;
+}
+
+section div.postar form{
+  display: flex;
+}
+
+section div.postar{
+  display: flex;
+  padding: 20px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+section div.postar input{
+  margin-left: 1%;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 20px;
+}
+
+section div.postar button{
+  background-color:pink;
+  border: none;
+  color: white;
+  font-weight: 900;
+  font-family: Pixelify Sans;
+  width: 100%;
+  height: 90%;
+  display:block;
+  border-radius: 30px;
+  width: 100%;
+  padding: 3%;
+  display: inline;
+  margin-left: 150%;
+}
+
+/*Posts*/
+
+div.user{
+  margin-top: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  vertical-align: middle;
+  border-color: rgb(250, 91, 131);
+  width: 60%;
+  background-color: white;
+  border: 2px;
+  min-width: fit-content;
+}
+
+div.user img{
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+div.user p{
+  display: inline;
+  font-size: 120%;
+}
+
+div.user .username{
+  color: rgb(125, 124, 124);
+  font-weight: normal;
+}
+
+div.post{
+  border: 2px solid pink;
+  border-radius: 40px;
+  vertical-align: top;
+  padding-bottom: 4%;
+  padding-left: 2%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  margin-top: 3%;
+}
+
+div.post .mensagem{
+  display: inline-block;
+  margin-left: 5%;
+  font-size: 150%;
+}
+
+div.post img.ft{
+  display: block;
+  border-radius: 30px;
+  height: 300px;
+  margin: 2%;
+  box-shadow: 2px 1px 5px rgb(250, 91, 131);
+}
+
+div.post .hashtag{
+  color:#FB229A;
+}
+
+div.post .hashtag:hover{
+  text-decoration: underline;
+}
+
+/*Propaganda*/
+aside {
+  height: 100%;
+  width: 18%;
+  background-color:#FA9FC8;
+  float: right;
+  padding:5px;	 	 
+  position: fixed;
+  right: 0%;
+}
+
+aside input{
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 2% 5%;
+  height: 45px;
+  border-radius:25px;
+  font-size: 120%;
+  font-family: Pixelify Sans;
+}
+
+aside div.sugestoes{
+  margin-left: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
+  font-size: 150%;
+  font-family: Pixelify Sans;
+  border: 2px solid white;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+
+aside div.sugestoes p:hover{
+  cursor:pointer;
+  text-decoration: underline;
+  color:#FB229A;
+}
+
+
+/*Categorias*/
+.categorias{
+  text-align: center;
+  padding-left: 4%;
+}
+
+
+
+div.categoria{
+  font-family: Pixelify Sans;
+  width: 30%;
+  box-shadow: 0px 0px 6px #FB229A;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 60px;
+  padding: 3% 3%;
+  min-width: fit-content;
+  text-align: center;
+  margin-left: 1%;
+  margin-top: 2%;
+}
+
+.categoria img{
+  height: 200px;
+  width: 200px;
+  object-position: center;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 40px;
+}
+
+.categoria p{
+  margin-left: 8px;
+  margin-bottom: 0;
+  font-size: 120%;
+}
+
+.nome_categoria{
+  font-size: 130%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.seguidores{
+  margin-top: 9px;
+  font-size: 14px;
+  color:rgb(160, 160, 160);
+}
+
+.categoria button{
+  margin-left: 8px;
+  margin-top: 12px;
+  background-color: #FB229A;
+  padding: 8px 17px;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  font-size: 120%;
+  margin-bottom: 5px;
+  font-family: Pixelify Sans;
+}
+
+/*CHAT*/
+
+div.conversa{
+  font-family: pixelify Sans;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow:0px 0px 6px #eb007d91;
+  border-radius: 100px;
+  height: 500px;
+  background-color: #FA9FC8;  
+  margin-left: 5.5%;
+  margin-top: 5%;
+}
+
+div.conversa h1{
+  color: white;
+  padding: 2%;
+  margin: 2%;
+}
+
+div.conversa .chat{
+  flex: 1;
+  color:#FB229A;
+  padding: 2% 3%;
+}
+
+
+div.conversa .chat .message{
+  background-color: white;
+  padding: 1%;
+  width:fit-content;
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+div.conversa .chat .usuario_message{
+  margin-left: auto;
+  background-color: #FB229A;
+  color: white;
+}
+
+div.enviar form{
+  display: flex;
+  padding: 5%;
+  
+}
+
+div.enviar form input{
+  flex: 1;
+  height: 30px;
+  border: none;
+  font-size: 110%;
+  padding-left: 1%;
+  border-radius: 5px;
+}
+
+div.enviar form button{
+  width: 10%;
+  font-size: 120%;
+  border: none;
+  background-color: #EB007C;
+  color: white;
+  cursor: pointe;
+  border-radius: 5px;
+}
+
+div.enviar form button:hover{
+  background-color: #bf0166;
+  transition: 0.2s ease;
+}
+

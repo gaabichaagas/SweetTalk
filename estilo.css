@@ -1,6 +1,7 @@
 body{
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 *{
@@ -12,18 +13,22 @@ body{
 header{
   width: 100%;
 	height: 13%;
-  background-color:#EB007C;
+  background-color:#FA9FC8;
   color:white;
   text-align:center;
   padding:5px;	
-  background: url(img/fundo.jpg);
+  left: 0%;
+  top: 0%;
+  position: fixed;
 }
 
 header h1{
-  font-family: Playwrite Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 300%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  font-size: 400%;
+  vertical-align: center;
+  align-items: center;
+  padding-top: 1%;
+  font-weight: bold;
+  font-family: 'Georgia';
 }
 
 /*INICIO NAVEGAÇÃO*/
@@ -32,9 +37,7 @@ nav{
   width: 20%;
   height: 100%;
   background-color: #FA9FC8;
-  border-right: 1.5px solid white;
   float: left;
-  position: relative;
   position: fixed;
   left: 0%;
 }
@@ -51,7 +54,6 @@ div.opcoes, div.menu{
 }
 
 a div.ativa {
-  text-decoration: none;
   background-color: white;
   color: #f496c0;
 }
@@ -74,6 +76,11 @@ a div.opcoes:hover, a div.opcoes.ativa{
   color: #f496c0;
   transition: color 0.2s ease-out;
   border-left: 5px solid #FA9FC8;
+  text-decoration: underline;
+}
+
+nav a{
+  text-decoration: none;
 }
 
 div.menu{
@@ -92,9 +99,8 @@ div.opcoes a{
   min-width: fit-content;
   color: black;
   text-decoration: none;
+  text-decoration: none;
 }
-
-
 
 /*FIM Navegação*/
 
@@ -108,6 +114,8 @@ section {
   margin-right: 2%;
   flex: 0.5;
   margin-left: 20%;
+  margin-top: 8%;
+  margin-bottom: 10%;
 }
 
 section div.postar img{
@@ -148,7 +156,7 @@ section div.postar button{
   width: 100%;
   padding: 3%;
   display: inline;
-  margin-left: 150%;
+  margin-left: 130%;
 }
 
 /*Posts*/
@@ -243,14 +251,29 @@ aside div.sugestoes{
   font-size: 150%;
   font-family: Pixelify Sans;
   border: 2px solid white;
-  margin-top: 10%;
   border-radius: 10px;
 }
 
-aside div.sugestoes p:hover{
+aside div.sugestoes a{
+  cursor:pointer;
+  text-decoration: none;
+  color:black;
+  font-weight: 200;
+}
+
+aside div.sugestoes a:hover{
   cursor:pointer;
   text-decoration: underline;
   color:#FB229A;
+}
+
+aside h1{
+  display: block;
+  font-family: Pixelify Sans;
+  color: white;
+  margin-left: 2%;
+  margin-top: 2%;
+  font-size: 200%;
 }
 
 
@@ -259,8 +282,6 @@ aside div.sugestoes p:hover{
   text-align: center;
   padding-left: 4%;
 }
-
-
 
 div.categoria{
   font-family: Pixelify Sans;
@@ -325,16 +346,17 @@ div.conversa{
   flex-direction: column;
   box-shadow:0px 0px 6px #eb007d91;
   border-radius: 100px;
-  height: 500px;
+  height: 600px;
   background-color: #FA9FC8;  
   margin-left: 5.5%;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 div.conversa h1{
   color: white;
   padding: 2%;
-  margin: 2%;
+  margin-left: 5%;
+  margin-top: 1%;
 }
 
 div.conversa .chat{
@@ -387,4 +409,112 @@ div.enviar form button:hover{
   background-color: #bf0166;
   transition: 0.2s ease;
 }
+
+
+/*Rodapé*/
+
+footer{
+  background-color: #fa78b2;
+  height: auto;
+  width: 100%;
+  font-family: Pixelify Sans;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position:fixed;
+}
+
+footer .conteudo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer .conteudo h3{
+  font-size: 150%;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+footer .redesocial{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
+  margin-left: 5%;
+}
+
+footer .redesocial li{
+  margin: 0 10px;
+}
+
+footer .redesocial a{
+  text-align: none;
+  color: white;
+}
+
+footer .redesocial a:hover i{
+  color:black;
+  transition: 0.5s ease;
+}
+
+/*Perfil*/
+
+section div.perfil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usuario_box{
+  background-color: white;
+  text-align: center;
+  border: 1px solid #EB007C;
+  box-shadow: 0px 0px 6px #FB229A;
+  padding: 4% 9%;
+  color:#FB229A;
+  border-radius: 100px;
+
+}
+
+section div.perfil img{
+  width: 150px;
+  border-radius: 50%;
+  background-color: #FB229A;
+  padding: 0.6%;
+  box-shadow: 0px 1px 4px #FB229A;
+  margin-top: 2%;
+}
+
+section div.usuario_box p{
+  font-size: 130%;
+  margin-bottom: 3%;
+}
+
+section div.usuario_box a{
+  color:#FB229A;
+  font-size: 250%;
+  margin: 10%;
+}
+
+section div.usuario_box button{
+  margin-left: 5%;
+  margin-top: 1.5%;
+  background-color: #FB229A;
+  padding: 8px 17px;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  font-size: 130%;
+  margin-bottom: 0.5%;
+  font-family: Pixelify Sans;
+  display: inline;
+}
+
+
 

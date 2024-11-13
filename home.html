@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!--Cabeçalho-->
@@ -32,8 +32,8 @@
                 <h2>Menu</h2>
             </div>
             
-            <a href="home.html"> 
-                <div class="opcoes">
+            <a href="index.html"> 
+                <div class="opcoes ativa">
                         <span class="material-symbols-outlined">
                             home
                         </span>
@@ -53,7 +53,7 @@
             </a>
 
             <a href="chat.html">
-                <div class="opcoes ativa">
+                <div class="opcoes">
                     <span class="material-symbols-outlined">
                         forum
                     </span>
@@ -78,32 +78,92 @@
         </nav>
     <!--Fim da navegação-->
 
-    <!--INICIO:chat-->
+    <!--INICIO: post-->
     <section>
-      <div class="conversa">
-        <h1>Friend</h1>
+        <div class="box-post">
 
-        <div class="chat">
+            <div class="box">
+                <img class="foto" alt="foto de usuario" src="img/hoshi.jpg">
+                <input class="postar-post" type="text" placeholder="O que você está pensando?">
+                <button class="postar">Postar</button>
+            </div>
 
-          <p class="message">Oii</p>
-          <p class="message usuario_message">Oii </p>
-          <p class="message">Qual a sua música favorita?</p>
-          <div class="novasMsg">
-
-          </div>
         </div>
 
-        <div class="enviar">
-          <div class="form">
-            <input class="mensagem" type="text">
-            <button class="enviar-mensagem">&#62;</button>
-          </div>
+        <div class="novosPosts">
+
         </div>
 
-      </div>
+
+        
+        <div class="post hidden">
+            <div class="user">
+                <img src="img/hoshi.jpg" alt="foto usuário">
+                <p>
+                    Hoshi <span class="username"> &#64;Kwon_Hoshi 1h</span> 
+                </p>
+            </div>
+            <p class="mensagem">Laufey diva</p>
+        </div>
+
+        <div class="post hidden">
+            <div class="user">
+                <img src="img/chaewon.jfif" alt="foto usuário">
+                <p>
+                    Chaewon <span class="username"> &#64;chacha15_ 2min</span> 
+                </p>
+            </div>
+            <p class="mensagem">Olha que fofinho KKKKKKKKKK</p>
+            <img class="ft" alt="gatos" src="img/gatitos.jpg">
+        </div>
+
+        <div class="post hidden">
+            <div class="user">
+                <img src="img/ariel.jpg" alt="foto usuário">
+                <p>
+                    Sereia <span class="username"> &#64;cute_princess12 1d</span> 
+                </p>
+            </div>
+            <p class="mensagem">Bichinho dos sonhos: </p>
+            <img class="ft" alt="capivara" src="img/capivara.jpg">
+        </div>
+
+        <div class="post hidden">
+            <div class="user">
+                <img src="img/nami.jpg" alt="foto usuário">
+                <p>
+                    Rafa <span class="username"> &#64;one_pink 30min</span> 
+                </p>
+            </div>
+            <p class="mensagem">
+            Hoje tô me sentindo muito bambada badajababa 
+            babada bababajabababa <span class="hashtag">#laufey</span>
+        </p>
+        </div>
+
+        <div class="post hidden">
+            <div class="user">
+                <img src="img/leticai.jpg" alt="foto usuário">
+                <p>
+                    Yumi<span class="username"> &#64;hyumizz 4h</span> 
+                </p>
+            </div>
+            <img class="ft" alt="theo" src="img/theo.jpg">            
+        </div>
+
+        <div class="post hidden">
+            <div class="user">
+                <img src="img/flor.jfif" alt="foto usuário">
+                <p>
+                    Gaby <span class="username"> &#64;neuza_santos 5h</span> 
+                </p>
+            </div>
+            <p class="mensagem">Nem todo ponto final indica fim de história, pode ser só o começo de um novo parágrafo.</p>
+            <img class="ft" alt="bom dia" src="img/bomdia.webp">
+        </div>
 
     </section>
-    <!--FIM chat-->
+    <!--FIM: posts-->
 
     <!--Propaganda-->
     <aside>
@@ -119,6 +179,8 @@
         </div>
     </aside>
 
+
+    <!--Início Rodapé-->
     <footer>
         <div class="conteudo">
             <h3>Gabriela Ap. R. Chagas</h3>
@@ -127,10 +189,9 @@
                 <li><a href="https://github.com/gaabichaagas"><i class="fa fa-github"></i></a></li>
             </ul>
         </div>
-
     </footer>
-
-    <script src="chat.js"></script>
+    
+    <script src="script.js"></script>
 
 </body>
 </html>

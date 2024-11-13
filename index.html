@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Talk</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="shortcut icon" href="img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,184 +14,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Cabeçalho-->
-    <header>
-        <h1>Sweet Talk</h1>
-    </header>
-    <!--FIM cabeçalho-->
-        
-    
-    <!--Começo da navegação-->
-        <nav>
-            <div class="menu">
-                <span class="material-symbols-outlined">
-                    menu
-                </span>
-                <h2>Menu</h2>
-            </div>
-            
-            <a href="index.html"> 
-                <div class="opcoes ativa">
-                        <span class="material-symbols-outlined">
-                            home
-                        </span>
-                        <h2>Home</h2>
-                
-                </div>
-            </a>            
+  <div class="container">
+    <div id="form">
+      <h1>Entrar no SweetTalk</h1>
 
-            <a href="categorias.html">
-                <div class="opcoes">
-                    
-                        <span class="material-symbols-outlined">
-                            search
-                        </span>
-                        <h2>Categorias</h2>
-                </div>
-            </a>
+      <div class="input-container">
+        <input id="nomeDigitado" placeholder="Nome" required>
+      </div>
 
-            <a href="chat.html">
-                <div class="opcoes">
-                    <span class="material-symbols-outlined">
-                        forum
-                    </span>
-                    <h2>Chat</h2>
-                </div>
-            </a>
+      <div class="input-container">
+        <input id="userDigitado" placeholder="User" type="email" required>
+        <img src="img/user-icon.png">
+      </div>
 
-            <a href="perfil.html">
-                <div class="opcoes">
-                    <img class="icons" src="img/hoshi.jpg">
-                    <h2>Perfil</h2>
-                </div>
-            </a>
+      <div class="input-container">
+        <input id="senhaDigitada" placeholder="Senha" type="password" required>
+        <img src="img/lock.png">
+      </div>
 
+      <div class="input-container calendar"> 
+        <input id="dataNascimento" placeholder="Data de nascimento" type="date" required> 
+      </div> 
+      
+      <button id="botao-login" class="button-login" type="button">Entrar</button>
 
-            <div class="opcoes conf">
-                <span class="material-symbols-outlined">
-                    manufacturing
-                </span>
-                <h2>Ajustes</h2>
-            </div>
-        </nav>
-    <!--Fim da navegação-->
+    </div>
+  </div>
 
-    <!--INICIO: post-->
-    <section>
-        <div class="box-post">
-
-            <div class="box">
-                <img class="foto" alt="foto de usuario" src="img/hoshi.jpg">
-                <input class="postar-post" type="text" placeholder="O que você está pensando?">
-                <button class="postar">Postar</button>
-            </div>
-
-        </div>
-
-        <div class="novosPosts">
-
-        </div>
-
-
-        
-        <div class="post hidden">
-            <div class="user">
-                <img src="img/hoshi.jpg" alt="foto usuário">
-                <p>
-                    Hoshi <span class="username"> &#64;Kwon_Hoshi 1h</span> 
-                </p>
-            </div>
-            <p class="mensagem">Laufey diva</p>
-        </div>
-
-        <div class="post hidden">
-            <div class="user">
-                <img src="img/chaewon.jfif" alt="foto usuário">
-                <p>
-                    Chaewon <span class="username"> &#64;chacha15_ 2min</span> 
-                </p>
-            </div>
-            <p class="mensagem">Olha que fofinho KKKKKKKKKK</p>
-            <img class="ft" alt="gatos" src="img/gatitos.jpg">
-        </div>
-
-        <div class="post hidden">
-            <div class="user">
-                <img src="img/ariel.jpg" alt="foto usuário">
-                <p>
-                    Sereia <span class="username"> &#64;cute_princess12 1d</span> 
-                </p>
-            </div>
-            <p class="mensagem">Bichinho dos sonhos: </p>
-            <img class="ft" alt="capivara" src="img/capivara.jpg">
-        </div>
-
-        <div class="post hidden">
-            <div class="user">
-                <img src="img/nami.jpg" alt="foto usuário">
-                <p>
-                    Rafa <span class="username"> &#64;one_pink 30min</span> 
-                </p>
-            </div>
-            <p class="mensagem">
-            Hoje tô me sentindo muito bambada badajababa 
-            babada bababajabababa <span class="hashtag">#laufey</span>
-        </p>
-        </div>
-
-        <div class="post hidden">
-            <div class="user">
-                <img src="img/leticai.jpg" alt="foto usuário">
-                <p>
-                    Yumi<span class="username"> &#64;hyumizz 4h</span> 
-                </p>
-            </div>
-            <img class="ft" alt="theo" src="img/theo.jpg">            
-        </div>
-
-        <div class="post hidden">
-            <div class="user">
-                <img src="img/flor.jfif" alt="foto usuário">
-                <p>
-                    Gaby <span class="username"> &#64;neuza_santos 5h</span> 
-                </p>
-            </div>
-            <p class="mensagem">Nem todo ponto final indica fim de história, pode ser só o começo de um novo parágrafo.</p>
-            <img class="ft" alt="bom dia" src="img/bomdia.webp">
-        </div>
-
-    </section>
-    <!--FIM: posts-->
-
-    <!--Propaganda-->
-    <aside>
-        <div class="pesquisa_post">
-            <input type="text" placeholder="Pesquise">
-        </div>
-
-        <h1>Explore</h1>
-        <div class="sugestoes">
-            <a href="animais.html"><p>Animais fofos</p></a>
-            <a href="meme.html"><p>Memes</p></a>
-            <a href="conselhos.html"><p>Conselhos</p></a>
-        </div>
-    </aside>
-
-
-    <!--Início Rodapé-->
-    <footer>
-        <div class="conteudo">
-            <h3>Gabriela Ap. R. Chagas</h3>
-            <ul class="redesocial">
-                <li><a href="https://www.instagram.com/gaabi_chaagas/"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://github.com/gaabichaagas"><i class="fa fa-github"></i></a></li>
-            </ul>
-        </div>
-    </footer>
-    
-    <script src="script.js"></script>
-
+  <script src="login.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

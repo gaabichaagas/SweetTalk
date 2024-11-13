@@ -22,7 +22,7 @@ document.getElementById('botao-login').addEventListener('click', function() {
   if (idade < 13) {
     alert('Você deve ter pelo menos 13 anos para entrar no SweetTalk.');
   } else {
-    window.location.href = 'index.html';
+    window.location.href = 'home.html';
   }
 });
 

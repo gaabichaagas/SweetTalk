@@ -1,0 +1,552 @@
+body{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+}
+
+main {
+  flex: 1; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 13vh; 
+  background-color: #ed4f96;
+  color: white;
+  text-align: center;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1; 
+}
+
+header h1{
+  font-size: 400%;
+  vertical-align: center;
+  align-items: center;
+  padding-top: 1%;
+  font-weight: bold;
+  font-family: 'Georgia';
+}
+
+/*INICIO NAVEGAÇÃO*/
+
+nav {
+  width: 20%;
+  height: 100vh; 
+  background-color: #FA9FC8;
+  position: fixed;
+  left: 0;
+  top: 0;
+  top: 13vh; 
+  z-index: 1; 
+}
+div.opcoes, div.menu{
+  align-items: center;
+  cursor: pointer;
+  padding: 7%;
+  font-family: Pixelify Sans;
+  font-size: 100%;
+  padding-left: 5%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+
+a div.ativa {
+  background-color: white;
+  color: #f496c0;
+}
+
+div.opcoes h2, div.menu h2{
+  margin-left: 10px;
+  display: inline;
+  min-width: fit-content;
+}
+
+a div.opcoes{
+  display: block;
+  border-bottom: 1px solid white;
+  border-left: 5px solid transparent;
+  color: black;
+}
+
+a div.opcoes:hover, a div.opcoes.ativa{
+  background-color: white;
+  color: #f496c0;
+  transition: color 0.2s ease-out;
+  border-left: 5px solid #FA9FC8;
+  text-decoration: underline;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+div.menu{
+  margin-left: 0.5%;
+}
+
+
+img.icons{
+  height: 20px;
+  border-radius: 10px;
+}
+
+div.opcoes a{
+  margin-left: 10px;
+  display: inline;
+  min-width: fit-content;
+  color: black;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+/*FIM Navegação*/
+
+
+/*Postar*/
+
+section {
+  width: 55%;
+  padding: 5px;
+  margin-left: 22%; 
+  margin-top: 15vh; 
+  margin-bottom: 2%;
+  transition: margin 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: scale(0.5);
+  transition: all 0.5s ease;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+
+section div.box-post img{
+  border-radius: 100px;
+  height: 50px;
+}
+
+section div.box-post .box{
+  display: flex;
+}
+
+section div.box-post{
+  display: flex;
+  padding: 20px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+section div.box-post input{
+  margin-left: 1%;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 20px;
+}
+
+section div.box-post button{
+  background-color:pink;
+  border: none;
+  color: white;
+  font-weight: 900;
+  font-family: Pixelify Sans;
+  width: 100%;
+  height: 90%;
+  display:block;
+  border-radius: 30px;
+  width: 100%;
+  padding: 3%;
+  display: inline;
+  margin-left: 130%;
+}
+
+/*Posts*/
+
+div.user{
+  margin-top: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  vertical-align: middle;
+  border-color: rgb(250, 91, 131);
+  width: 60%;
+  background-color: white;
+  border: 2px;
+  min-width: fit-content;
+  
+}
+
+div.user img{
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+div.user p{
+  display: inline;
+  font-size: 120%;
+}
+
+div.user .username{
+  color: rgb(125, 124, 124);
+  font-weight: normal;
+}
+
+div.post{
+  border: 2px solid pink;
+  border-radius: 40px;
+  vertical-align: top;
+  padding-bottom: 4%;
+  padding-left: 2%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  margin-top: 3%;
+
+}
+
+
+
+div.post .mensagem{
+  display: inline-block;
+  margin-left: 5%;
+  font-size: 150%;
+}
+
+div.post img.ft{
+  display: block;
+  border-radius: 30px;
+  height: 300px;
+  margin: 2%;
+  box-shadow: 2px 1px 5px rgb(250, 91, 131);
+}
+
+div.post .hashtag{
+  color:#FB229A;
+}
+
+div.post .hashtag:hover{
+  text-decoration: underline;
+}
+
+/*Propaganda*/
+aside {
+  width: 18%; 
+  padding: 5px;
+  position: fixed;
+  right: 0; 
+  top: 13vh; 
+  background-color: #F5F5F5;
+  height: calc(100vh - 13vh); 
+  z-index: 1;
+  background-color:#FA9FC8;
+}
+
+aside input{
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 2% 5%;
+  height: 45px;
+  border-radius:25px;
+  font-size: 120%;
+  font-family: Pixelify Sans;
+}
+
+aside div.sugestoes{
+  margin-left: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
+  font-size: 150%;
+  font-family: Pixelify Sans;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+aside div.sugestoes a{
+  cursor:pointer;
+  text-decoration: none;
+  color:black;
+  font-weight: 200;
+}
+
+aside div.sugestoes a:hover{
+  cursor:pointer;
+  text-decoration: underline;
+  color:#FB229A;
+}
+
+aside h1{
+  display: block;
+  font-family: Pixelify Sans;
+  color: white;
+  margin-left: 2%;
+  margin-top: 2%;
+  font-size: 200%;
+}
+
+
+/*Categorias*/
+.categorias{
+  text-align: center;
+  padding-left: 4%;
+}
+
+div.categoria{
+  font-family: Pixelify Sans;
+  width: 30%;
+  box-shadow: 0px 0px 6px #FB229A;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 60px;
+  padding: 3% 3%;
+  min-width: fit-content;
+  text-align: center;
+  margin-left: 1%;
+  margin-top: 2%;
+}
+
+.categoria img{
+  height: 200px;
+  width: 200px;
+  object-position: center;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 40px;
+}
+
+.categoria p{
+  margin-left: 8px;
+  margin-bottom: 0;
+  font-size: 120%;
+}
+
+.nome_categoria{
+  font-size: 130%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.seguidores{
+  margin-top: 9px;
+  font-size: 14px;
+  color:rgb(160, 160, 160);
+}
+
+.categoria button{
+  margin-left: 8px;
+  margin-top: 12px;
+  background-color: #FB229A;
+  padding: 8px 17px;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  font-size: 120%;
+  margin-bottom: 5px;
+  font-family: Pixelify Sans;
+}
+
+/*CHAT*/
+
+div.conversa {
+  font-family: Pixelify Sans;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 6px #eb007d91;
+  border-radius: 20px;
+  background-color: #FA9FC8;
+  margin-left: 5.5%;
+  margin-top: 1%;
+  height: 80vh; 
+  max-width: 95%; 
+  overflow: hidden; 
+}
+
+div.conversa h1{
+  color: white;
+  padding: 2%;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+div.conversa .chat{
+  flex: 1;
+  color:#FB229A;
+  padding: 2% 3%;
+}
+
+
+div.conversa .chat .message{
+  background-color: white;
+  padding: 1%;
+  width:fit-content;
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+
+div.conversa .chat .usuario_message{
+  margin-left: auto;
+  background-color: #FB229A;
+  color: white;
+}
+
+div.enviar .form{
+  display: flex;
+  padding: 5%;
+  
+}
+
+div.enviar .form input{
+  flex: 1;
+  height: 30px;
+  border: none;
+  font-size: 110%;
+  padding-left: 1%;
+  border-radius: 5px;
+}
+
+div.enviar .form button{
+  width: 10%;
+  font-size: 120%;
+  border: none;
+  background-color: #EB007C;
+  color: white;
+  cursor: pointe;
+  border-radius: 5px;
+}
+
+div.enviar .form button:hover{
+  background-color: #bf0166;
+  transition: 0.2s ease;
+}
+
+
+/*Rodapé*/
+
+footer {
+  background-color: #fa78b2;
+  height: auto;
+  width: 100%;
+  font-family: Pixelify Sans;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: white;
+  left: 0;
+  right: 0;
+  position: relative; 
+  text-align: center;
+}
+
+footer .conteudo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer .conteudo h3{
+  font-size: 150%;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+footer .redesocial{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
+  margin-left: 5%;
+}
+
+footer .redesocial li{
+  margin: 0 10px;
+}
+
+footer .redesocial a{
+  text-align: none;
+  color: white;
+}
+
+footer .redesocial a:hover i{
+  color:black;
+  transition: 0.5s ease;
+}
+
+/*Perfil*/
+
+section div.perfil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usuario_box{
+  background-color: white;
+  text-align: center;
+  border: 1px solid #EB007C;
+  box-shadow: 0px 0px 6px #FB229A;
+  padding: 4% 9%;
+  color:#FB229A;
+  border-radius: 100px;
+
+}
+
+section div.perfil img{
+  width: 150px;
+  border-radius: 50%;
+  background-color: #FB229A;
+  padding: 0.6%;
+  box-shadow: 0px 1px 4px #FB229A;
+  margin-top: 2%;
+}
+
+section div.usuario_box p{
+  font-size: 130%;
+  margin-bottom: 3%;
+}
+
+section div.usuario_box a{
+  color:#FB229A;
+  font-size: 250%;
+  margin: 10%;
+}
+
+section div.usuario_box button{
+  margin-left: 5%;
+  margin-top: 1.5%;
+  background-color: #FB229A;
+  padding: 8px 17px;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  font-size: 130%;
+  margin-bottom: 0.5%;
+  font-family: Pixelify Sans;
+  display: inline;
+}
+
+.footer{
+  margin-top: 6.4%;
+}
+
+
